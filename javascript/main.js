@@ -26,11 +26,16 @@ submit.addEventListener("click",Submit)
 function Create(todo){
     var taskdiv=document.createElement("div");
     taskdiv.className=" my-2 py-3 px-2 whole form-group"
-    taskdiv.innerHTML+= count+ ")" + " "+ `<div>
+    taskdiv.innerHTML+=`<div class="box">
+    <div>
+    <label>${count}) </label>
     <input value="${todo}" id="input${count}" class="input-title">
-    <button class="btn btn-md" id="edit${count}" onclick="update(${count})"><i class="fas fa-edit"></i></button>
-    <button class="btn btn-md" id="save${count}" onclick="save(${count})"><i class="fas fa-save"></i></button>
-    <button class="btn btn-md" id="del${count}" onclick="destroy(${count})"><i class="fas fa-trash"></i></button>
+    </div>
+    <div>
+    <button class="btn btn-md" id="edit${count}" onclick="update(${count})"><i class="fas fa-edit"></i> Edit</button>
+    <button class="btn btn-md" id="save${count}" onclick="save(${count})"><i class="fas fa-save"></i> Save</button>
+    <button class="btn btn-md" id="del${count}" onclick="destroy(${count})"><i class="fas fa-trash"></i> Delete</button>
+    </div>
     </div>`
     taskdiv.id=count
    todocont.appendChild(taskdiv)
