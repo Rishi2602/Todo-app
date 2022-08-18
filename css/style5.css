@@ -27,8 +27,6 @@ body .header{
 } 
 .whole{
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
     background-color:rgb(31 88 88);
     color: white;
     font-size: 1.15rem;
@@ -37,7 +35,7 @@ body .header{
 }
 .whole button{
     padding:2px 5px;
-    margin-right: 10px;
+    margin: 5px 5px;
 }
 .input-title{
     border-radius: 5px;
@@ -47,4 +45,9 @@ body .header{
     color:white;
     font-family: 'Montserrat', sans-serif;
     font-size:1.15rem;
+    width:40%;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
 }
