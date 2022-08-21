@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbox {
+  background-color: rgb(31, 88, 88);
+}
+.navbox .hprimary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 300px) {
+  .navbox .hprimary {
+    font-size: 1.3rem;
+  }
+  .navbox .dots {
+    padding: 1px 1px;
+  }
+}
+.navbox .navbar {
+  padding: 4px 0%;
+}
+
+body .header {
+  margin-top: 10px;
+  padding: 3.5% 7%;
+}
+
+.whole {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  background-color: rgb(31, 88, 88);
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+.whole button {
+  padding: 2px 5px;
+  margin: 5px 5px;
+}
+
+.input-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  background-color: rgb(31, 88, 88);
+  color: white;
+  width: 40%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

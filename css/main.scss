@@ -1,0 +1,47 @@
+@import "mixin";
+$color:rgb(31 88 88);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbox{
+    background-color:$color;
+    .hprimary{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.0rem;
+    }
+}
+
+@media(max-width:300px){
+    .navbox .hprimary{
+        font-size: 1.3rem;
+    }
+    .navbox .dots{
+        padding: 1px 1px;
+    } 
+}
+.navbox .navbar{
+    padding: 4px 0%;
+}
+body .header{
+    margin-top: 10px;
+    padding: 3.5% 7%;
+} 
+.whole{
+    @include common(1.15rem,white,100%);
+    button{
+        padding:2px 5px;
+        margin: 5px 5px;
+    }
+}
+.input-title{
+    @include common(1.15rem,white,40%);
+    outline:none;
+    border:none;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}

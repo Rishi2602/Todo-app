@@ -1,0 +1,8 @@
+@mixin common($size,$textcolor,$width) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    background-color:$color;
+    color: $textcolor;
+    width:$width;
+    border-radius: 5px;
+}
